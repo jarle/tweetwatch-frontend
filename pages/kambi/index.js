@@ -3,7 +3,7 @@ import { BASE_URL, getStaticProps as gsp } from '../../lib/utils'
 
 
 export async function getStaticProps() {
-  const FULL_URL = BASE_URL + "evolution/latest.json"
+  const FULL_URL = BASE_URL + "kambi/latest.json"
   return gsp(FULL_URL)
 }
 
