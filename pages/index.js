@@ -22,6 +22,7 @@ export default function Home() {
               ["/crowdstrike", "$CRWD"],
               ["/embracer", "$EMBRAC"],
               ["/evolution", "$EVO // $EVVTY"],
+              ["/finanstwitter", "#finanstwitter"],
               ["/kambi", "$KAMBI"],
               ["/pexip", "$PEXIP"]
             ]
