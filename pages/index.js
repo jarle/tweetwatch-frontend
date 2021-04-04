@@ -19,14 +19,17 @@ export default function Home() {
         <div className={styles.grid}>
           {
             [
+              ["/crowdstrike", "$CRWD"],
+              ["/embracer", "$EMBRAC"],
               ["/evolution", "$EVO // $EVVTY"],
-              ["/kambi", "$KAMBI"]
+              ["/kambi", "$KAMBI"],
+              ["/pexip", "$PEXIP"]
             ]
               .map(
                 ([url, tags]) =>
                   <Link href={url}>
                     <a>
-                      <div className={styles.card}>
+                      <div className={styles.cashtagcard}>
                         <p>{tags}</p>
                       </div>
                     </a>
