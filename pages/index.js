@@ -41,7 +41,9 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        <p>I'm a footer!</p>
+        <div>
+          Created by <a href='https://twitter.com/upside_inv' target="_blank">@upside_inv</a>
+        </div>
       </footer>
     </div>
   )

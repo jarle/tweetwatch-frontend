@@ -1,8 +1,10 @@
+import styles from '../styles/Home.module.css'
+
 import Head from 'next/head'
 
 const AppHead = () =>
     <Head>
-        <title>tweetwatch</title>
+        <title className={styles.title}>tweetwatch</title>
         <link rel="icon" href="/favicon.svg" />
     </Head>
 

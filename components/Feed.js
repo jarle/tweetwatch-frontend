@@ -23,11 +23,11 @@ export default function Feed({ tweets }) {
             <main className={styles.main}>
                 <AppHeader />
 
-                <p className={styles.description}>
+                <p className={styles.weakText}>
                     Generated {tweets.date}
                 </p>
-
-                <div className={styles.grid}>
+                
+                <div className={styles.tweetgrid}>
                     <TweetFeed tweets={tweets} className={styles.grid} />
                 </div>
             </main>
