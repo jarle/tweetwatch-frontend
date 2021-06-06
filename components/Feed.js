@@ -3,13 +3,12 @@ import styles from '../styles/Home.module.css'
 import AppHead from '../components/AppHead'
 import AppHeader from '../components/AppHeader'
 import TweetCard from '../components/TweetCard'
-import { tweetscore } from '../lib/utils'
 
 function TweetFeed({ tweets }) {
     return tweets
         .data
         .sort(
-            (a, b) => tweetscore(b) - tweetscore(a)
+            (a, b) => b.tweetscore - b.tweetscore
         )
         .slice(0, 25)
         .map(TweetCard)

@@ -1,5 +1,4 @@
 import styles from '../styles/Home.module.css'
-import { tweetscore } from '../lib/utils'
 
 export default function TweetCard(tweet) {
     const media = tweet.photos.length > 0 ? tweet.photos
@@ -21,7 +20,7 @@ export default function TweetCard(tweet) {
                     tweet.tweet
                         // .replace(/https:\/\/t.co\/[^\s]+/, "")
                         // .replace(/\s?\$[^\s]+\s?/, " ")
-                        .replace(/#/, "")
+                        // .replace(/#/, "")
                 }
             </p>
         </div>
@@ -48,7 +47,7 @@ export default function TweetCard(tweet) {
         {media}
 
         <div>♥ {tweet.likes_count} 🔄 {tweet.retweets_count} 🗨 {tweet.replies_count}</div>
-        <div className={styles.weakText}>tweetscore {tweetscore(tweet)}</div>
+        <div className={styles.weakText}>tweetscore {tweet.tweetscore}</div>
     </div>
     </a>
 }
