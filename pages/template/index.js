@@ -1,7 +1,7 @@
 import Feed from '../../components/Feed'
 import { BASE_URL, getStaticProps as gsp } from '../../lib/utils'
 
-const COLLECTION = "embracer"
+const COLLECTION = "REPLACE ME"
 
 export async function getStaticProps() {
   const FULL_URL = BASE_URL + COLLECTION + "/latest.json"

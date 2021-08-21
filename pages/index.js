@@ -19,12 +19,18 @@ export default function Home() {
         <div className={styles.grid}>
           {
             [
+              ["/amazon", "$AMZN"],
+              ["/cloudflare", "$NET"],
               ["/crowdstrike", "$CRWD"],
               ["/embracer", "$EMBRAC"],
               ["/evolution", "$EVO // $EVVTY"],
               ["/finanstwitter", "#finanstwitter"],
               ["/kambi", "$KAMBI"],
-              ["/pexip", "$PEXIP"]
+              ["/pexip", "$PEXIP"],
+              ["/plejd", "$PLEJD"],
+              ["/sea", "$SE"],
+              ["/shopify", "$SHOP"],
+              ["/square", "$SQ"],
             ]
               .map(
                 ([url, tags]) =>

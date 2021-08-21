@@ -1,9 +1,10 @@
 import Feed from '../../components/Feed'
 import { BASE_URL, getStaticProps as gsp } from '../../lib/utils'
 
+const COLLECTION = "finanstwitter"
 
 export async function getStaticProps() {
-  const FULL_URL = BASE_URL + "finanstwitter/latest.json"
+  const FULL_URL = BASE_URL + COLLECTION + "/latest.json"
   return gsp(FULL_URL)
 }
 
