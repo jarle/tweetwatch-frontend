@@ -48,7 +48,7 @@ export default function Home() {
 
       <footer className={styles.footer}>
         <div>
-          Created by <a href='https://twitter.com/upside_inv' target="_blank">@upside_inv</a>
+          Created by <a href='https://twitter.com/jarlemathiesen' target="_blank">@jarlemathiesen</a>
         </div>
       </footer>
     </div>
